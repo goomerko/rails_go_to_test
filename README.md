@@ -1,9 +1,11 @@
-Rails Go to Spec
+Rails Go to Test
 ================
 
-A Sublime Text 3 plug-in. From a .rb file this plug-in will open the relevant spec. If the spec doesn't exist it asks if it should be created. 
+This Sublime 3 plugin derive from https://github.com/sporto/rails_go_to_spec, changing it to work with tests instead of specs.
 
-Only supports _spec.rb files at the moment.
+From a .rb file this plug-in will open the relevant test. If the test doesn't exist it asks if it should be created.
+
+Only supports _test.rb files at the moment.
 
 Installation
 ------------
@@ -11,18 +13,18 @@ Installation
 Using Sublime Package Control
 http://wbond.net/sublime_packages/package_control
 
-Install rails_go_to_spec
+Install rails_go_to_test
 
 Usage
 -----
-- Run from menu > Goto > Rails Go to Spec
+- Run from menu > Goto > Rails Go to Test
 - Default key binding is command + shift + y
-- Or run from command palette 'Rails Go to Spec'
+- Or run from command palette 'Rails Go to Test'
 
 Dev
 ----
 
-git clone git@github.com:sporto/rails_go_to_spec.git RailsGoToSpec
+git clone git@github.com:goomerko/rails_go_to_test.git RailsGoToTest
 
 Testing
 -------

@@ -1,11 +1,11 @@
 import sublime, sublime_plugin, os
-import RailsGoToSpec.resolver
+import RailsGoToTest.resolver
 import re
 
-class RailsGoToSpecCommand(sublime_plugin.WindowCommand):
+class RailsGoToTestCommand(sublime_plugin.WindowCommand):
 
 	def run(self):
-		sublime.status_message('Running Rails Go To Spec')
+		sublime.status_message('Running Rails Go To Test')
 		win = self.window
 		view = win.active_view()
 		current_file = view.file_name()
@@ -17,7 +17,7 @@ class RailsGoToSpecCommand(sublime_plugin.WindowCommand):
 		if os.name == 'nt':
 			current_file = current_file.replace('\\', '/')
 
-		related_files = RailsGoToSpec.resolver.Resolver().run(current_file)
+		related_files = RailsGoToTest.resolver.Resolver().run(current_file)
 
 		# add the root dir to all files
 		for ix, file in enumerate(related_files):
