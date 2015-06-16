@@ -30,8 +30,3 @@ Testing
 -------
 
   python resolver_test.py
-
-Acknowledgements
------------
-
-Thanks to [reInteractive](http://www.reinteractive.net/) for providing the time to work on this.
